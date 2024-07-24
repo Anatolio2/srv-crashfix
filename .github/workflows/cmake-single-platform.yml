@@ -30,8 +30,8 @@ jobs:
 
     - name: Создание артефакта
       run: |
-        mkdir D:\a\srv-crashfix\srv-crashfix\build\Release\scf.dll
-        echo D:\a\srv-crashfix\srv-crashfix\build\Release\scf.dll
+        mkdir ${{github.workspace}}/build/Release/scf.dll
+        echo ${{github.workspace}}/build/Release/scf.dll
 
     - name: Загрузка артефакта
       uses: actions/upload-artifact@v3
